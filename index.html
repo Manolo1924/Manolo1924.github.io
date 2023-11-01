@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Recipes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            text-decoration: none;
+            color: #FFC300;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FFC300;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .recipe {
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .recipe h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .recipe p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Greek Recipes</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/navbar_pages/services.html">Services</a></li>
+                <li><a href="/navbar_pages/services.html">About</a></li>
+                <li><a href="/navbar_pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipes">
+            <h1>Featured Recipes</h1>
+            <a href="/recipes_pages/greek_salad.html">
+            <div class="recipe">
+                <img src="/images/greek_salad.jpg" alt="Greek Salad">
+                <h2>Greek Salad</h2>
+                <p>A refreshing and delicious Greek salad with feta cheese, olives, and fresh vegetables.</p>
+            </div>
+        </a>
+        <a href="/recipes_pages/mousaka.html">
+            <div class="recipe">
+                <img src="/images/mousaka_image.jpg" alt="Moussaka">
+                <h2>Moussaka</h2>
+                <p>A classic Greek dish with layers of eggplant, ground meat, and creamy béchamel sauce.</p>
+            </div>
+        </a>
+        <a href="/recipes_pages/tzatziki.html">
+            <div class="recipe">
+                <img src="/images/tzatziki.webp" alt="Tzatziki">
+                <h2>Tzatziki</h2>
+                <p>A creamy and garlicky cucumber yogurt dip, perfect for pita bread or as a sauce for grilled meats.</p>
+            </div>
+            <a href="/recipes_pages/fasolada.html">
+            <div class="recipe">
+                <img src="/images/fasolada.jpg" alt="Fasolada">
+                <h2>Fasolada</h2>
+                <p>A traditional Greek bean soup with tomatoes, herbs, and a touch of olive oil.</p>
+            </div>
+        </a>
+        <a href="/recipes_pages/loukoumades.html">
+            <div class="recipe">
+                <img src="/images/loukoumades.jpg" alt="Loukoumades">
+                <h2>Loukoumades</h2>
+                <p>Delicious Greek honey puffs, deep-fried to a golden brown and drizzled with honey and nuts.</p>
+            </div>
+        </a>
+        <a href="/recipes_pages/yiouvetsi.html">
+            <div class="recipe">
+                <img src="/images/giouvetsi.png" alt="Yiouvetsi">
+                <h2>Yiouvetsi</h2>
+                <p>A Greek baked pasta dish with lamb or beef, tomato sauce, and orzo pasta.</p>
+            </div>
+        </a>
+        <a href="/recipes_pages/spanakopita.html">
+            <div class="recipe">
+                <img src="/images/spanakopita_image.jpg" alt="Spanakopita">
+                <h2>Spanakopita</h2>
+                <p>A delicious Greek pastry filled with spinach, feta cheese, and herbs.</p>
+            </div>
+        </a>
+        </section>
+    </main>
+</body>
+</html>
